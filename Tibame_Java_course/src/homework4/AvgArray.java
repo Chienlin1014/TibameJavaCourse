@@ -15,6 +15,7 @@ public class AvgArray {
 				System.out.print(numArray[i]+" ");
 		}
 		System.out.println("等");
+		System.out.println("test");
 	}
 
 }
