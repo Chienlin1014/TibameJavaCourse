@@ -8,7 +8,7 @@ import java.io.FileReader;
 public class RandomString {
     public static void getAuthCode() {
         int num;
-        for (int i = 1; i < 8; i++) {
+        for (int i = 0; i < 8; i++) {
             num = (int) (Math.random() * 75 + 48);
             while ((num > '9' && num < 'A') || (num > 'Z' && num < 'a')) {
                 num = (int) (Math.random() * 75 + 48);
@@ -21,7 +21,7 @@ public class RandomString {
         }
     }
     public static void main(String[] args) {
+        System.out.print("本次產生之驗證碼為：");
         getAuthCode();
-        int[] a = new int[1] ;
-    }
+   }
 }
