@@ -10,7 +10,7 @@ public class RandomString {
         int num;
         for (int i = 0; i < 8; i++) {
             num = (int) (Math.random() * 75 + 48);
-            while ((num > '9' && num < 'A') || (num > 'Z' && num < 'a')) {
+            while ((num > '9' && num < 'A')|| (num > 'Z' && num < 'a')) {
                 num = (int) (Math.random() * 75 + 48);
             }
 //            可用下列式子取代，數字代表的是unicode編碼
@@ -23,5 +23,6 @@ public class RandomString {
     public static void main(String[] args) {
         System.out.print("本次產生之驗證碼為：");
         getAuthCode();
-   }
+
+    }
 }
