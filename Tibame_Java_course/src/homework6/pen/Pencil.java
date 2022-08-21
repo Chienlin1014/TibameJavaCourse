@@ -1,4 +1,4 @@
-package homework6;
+package homework6.pen;
 
 public class Pencil extends Pen{
     public Pencil(String brand, int price) {
