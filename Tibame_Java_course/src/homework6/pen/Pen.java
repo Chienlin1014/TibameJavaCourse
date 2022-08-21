@@ -1,4 +1,4 @@
-package homework6;
+package homework6.pen;
 
 public abstract class Pen {
     private String brand;
