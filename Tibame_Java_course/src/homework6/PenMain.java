@@ -1,4 +1,4 @@
-package homework6.pen;
+package homework6;
 
 public class PenMain {
     public static void main(String[] args) {

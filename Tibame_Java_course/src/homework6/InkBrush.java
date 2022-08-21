@@ -1,4 +1,4 @@
-package homework6.pen;
+package homework6;
 
 public class InkBrush extends Pen{
     public InkBrush(String brand, int price) {
