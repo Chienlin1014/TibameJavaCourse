@@ -1,0 +1,18 @@
+package homeworkExt.hero;
+
+public class ArrowMan extends Hero implements Behavior {
+	
+	public ArrowMan() {
+		super();
+	}
+
+	public ArrowMan(String name, int level, double exp) {
+		super(name, level, exp);
+	}
+
+	@Override
+	public void attack() {
+		System.out.println("放弓箭");
+	}
+
+}
