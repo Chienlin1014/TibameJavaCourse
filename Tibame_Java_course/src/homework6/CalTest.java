@@ -14,25 +14,25 @@ public class CalTest {
         str1 = br.readLine();
         System.out.println("請輸入y值:");
         str2 = br.readLine();
-
-        try {
-            x = Integer.parseInt(str1);
-            y = Integer.parseInt(str2);
-            System.out.println("x的y次方為：" + cal.powerXY(x, y));
-        } catch (CalException | NumberFormatException e) {
-            if (e instanceof NumberFormatException) {
-                System.out.println("輸入格式不正確");
+        boolean whileCtrl = true;
+        while (whileCtrl) {
+            try {
+                x = Integer.parseInt(str1);
+                y = Integer.parseInt(str2);
+                System.out.println("x的y次方為：" + cal.powerXY(x, y));
+                whileCtrl = false;
+            } catch (CalException | NumberFormatException e) {
+                if (e instanceof NumberFormatException) {
+                    System.out.println("輸入格式不正確");
+                }
+                if (e instanceof CalException) {
+                    System.out.println(e);
+                }
+                System.out.println("請重新輸入x值:");
+                str1 = br.readLine();
+                System.out.println("請重新輸入y值:");
+                str2 = br.readLine();
             }
-            if (e instanceof CalException) {
-                System.out.println(e);
-            }
-            System.out.println("請重新輸入x值:");
-            str1 = br.readLine();
-            x = Integer.parseInt(str1);
-            System.out.println("請重新輸入y值:");
-            str2 = br.readLine();
-            y = Integer.parseInt(str2);
-            System.out.println("x的y次方為：" + cal.powerXY(x, y));
         }
     }
 }
