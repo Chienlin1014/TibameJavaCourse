@@ -9,8 +9,8 @@ public class CalTest {
         Calculator cal = new Calculator();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int x, y;
-        System.out.println("請輸入x值:");
         String str1, str2;
+        System.out.println("請輸入x值:");
         str1 = br.readLine();
         System.out.println("請輸入y值:");
         str2 = br.readLine();
