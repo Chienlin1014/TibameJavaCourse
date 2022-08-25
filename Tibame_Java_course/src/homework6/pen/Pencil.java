@@ -10,7 +10,7 @@ public class Pencil extends Pen{
     }
     @Override
     public void write() {
-        System.out.println("削鉛筆再寫");
+        System.out.println("削鉛筆再寫1");
     }
     @Override
     public double getPrice() {
