@@ -5,25 +5,28 @@ public abstract class Pen {
     private double price;
 
     public Pen(String brand, double price) {
-        this.brand=brand;
-        this.price=price;
+        this.brand = brand;
+        this.price = price;
     }
 
     public Pen() {
     }
-    public void setBrand(String brand){
-        this.brand=brand;
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public void setPrice(int price) {
-        this.price=price;
+        this.price = price;
     }
 
     public String getBrand() {
         return brand;
     }
+
     public double getPrice() {
         return price;
     }
+
     public abstract void write();
 }
